@@ -1,14 +1,15 @@
 /* ==========================================================================
    Contact Section Styling - Chaudhari Bharit Center
-   Theme: Maharashtrian Traditional with Modern Warmth
+   Theme: Natural Green & Soft Sage Palette
    ========================================================================== */
 
 .contact-section {
   padding: var(--space-3xl) 0;
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-alt);
   position: relative;
   overflow: hidden;
   scroll-margin-top: 80px;
+  border-bottom: 1px solid var(--color-border);
 }
 
 /* Subtle decorative backdrop glow */
@@ -31,7 +32,7 @@
   left: -100px;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(85, 118, 71, 0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(63, 117, 72, 0.09) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -48,9 +49,9 @@
   align-items: center;
   gap: 0.5rem;
   background-color: rgba(229, 138, 36, 0.12);
-  color: var(--color-secondary-dark);
+  color: var(--color-secondary);
   font-size: var(--fs-sm);
-  font-weight: 600;
+  font-weight: 700;
   padding: 0.35rem 1rem;
   border-radius: var(--radius-full);
   margin-bottom: var(--space-sm);
@@ -101,7 +102,7 @@
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(84, 45, 29, 0.08);
+  border: 1px solid var(--color-border);
   transition: transform var(--transition-normal), box-shadow var(--transition-normal);
 }
 
@@ -116,15 +117,15 @@
   gap: var(--space-sm);
   margin-bottom: var(--space-md);
   padding-bottom: var(--space-xs);
-  border-bottom: 1px solid rgba(84, 45, 29, 0.08);
+  border-bottom: 1px solid var(--color-border-light);
 }
 
 .contact-card-icon {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-md);
-  background: rgba(229, 138, 36, 0.12);
-  color: var(--color-secondary);
+  background: rgba(63, 117, 72, 0.12);
+  color: var(--color-accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,7 +156,7 @@
   padding: var(--space-sm) var(--space-md);
   background-color: var(--color-bg);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(84, 45, 29, 0.06);
+  border: 1px solid var(--color-border-light);
   flex-wrap: wrap;
 }
 
@@ -174,7 +175,7 @@
 .contact-person-phone {
   font-size: var(--fs-base);
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-accent);
   font-family: var(--font-body);
   text-decoration: none;
   display: inline-flex;
@@ -192,7 +193,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   color: #FFFFFF;
   padding: 0.45rem 1rem;
   border-radius: var(--radius-full);
@@ -246,7 +247,7 @@
 
 /* Parcel Facility Highlight Banner */
 .contact-parcel-banner {
-  background: linear-gradient(135deg, rgba(85, 118, 71, 0.12) 0%, rgba(85, 118, 71, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(63, 117, 72, 0.12) 0%, rgba(63, 117, 72, 0.05) 100%);
   border: 1.5px dashed var(--color-accent);
   border-radius: var(--radius-lg);
   padding: var(--space-md) var(--space-lg);
@@ -265,7 +266,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(85, 118, 71, 0.25);
+  box-shadow: 0 4px 10px rgba(63, 117, 72, 0.25);
 }
 
 .contact-parcel-info h4 {
@@ -291,7 +292,7 @@
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(84, 45, 29, 0.08);
+  border: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -303,7 +304,7 @@
   justify-content: space-between;
   margin-bottom: var(--space-md);
   padding-bottom: var(--space-xs);
-  border-bottom: 1px solid rgba(84, 45, 29, 0.08);
+  border-bottom: 1px solid var(--color-border-light);
   flex-wrap: wrap;
   gap: var(--space-xs);
 }
@@ -319,7 +320,7 @@
   align-items: center;
   gap: 0.4rem;
   background-color: rgba(229, 138, 36, 0.1);
-  color: var(--color-secondary-dark);
+  color: var(--color-secondary);
   border: 1px solid rgba(229, 138, 36, 0.3);
   padding: 0.4rem 0.9rem;
   border-radius: var(--radius-full);
@@ -342,7 +343,7 @@
   border-radius: var(--radius-md);
   overflow: hidden;
   position: relative;
-  border: 1px solid rgba(84, 45, 29, 0.1);
+  border: 1px solid var(--color-border);
   background-color: #EEE;
 }
 
@@ -375,7 +376,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   color: #FFFFFF;
   padding: 0.55rem 1.1rem;
   border-radius: var(--radius-md);

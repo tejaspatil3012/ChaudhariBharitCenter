@@ -1,17 +1,17 @@
 /* ==========================================================================
    Chaudhari Bharit Center - Hero Section Styles
-   Two-column Layout, Authentic Maharashtrian Identity & Food Photography
+   Natural Green & Warm Cream Maharashtrian Theme
    ========================================================================== */
 
 .hero-section {
   position: relative;
-  background-color: var(--color-bg);
+  background-color: var(--color-bg); /* Warm Cream #FFF8EC */
   padding: var(--space-3xl) 0;
   overflow: hidden;
   border-bottom: 1px solid var(--color-border);
 }
 
-/* Subtle traditional background decorative warmth */
+/* Subtle traditional background decorative warmth with natural green tint */
 .hero-section::before {
   content: '';
   position: absolute;
@@ -19,7 +19,7 @@
   right: -150px;
   width: 450px;
   height: 450px;
-  background: radial-gradient(circle, rgba(229, 138, 36, 0.08) 0%, rgba(255, 248, 236, 0) 70%);
+  background: radial-gradient(circle, rgba(63, 117, 72, 0.09) 0%, rgba(255, 248, 236, 0) 70%);
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
@@ -59,7 +59,7 @@
   gap: 6px;
   background-color: var(--color-accent-light);
   color: var(--color-accent);
-  border: 1px solid rgba(85, 118, 71, 0.3);
+  border: 1px solid rgba(63, 117, 72, 0.35);
   padding: 5px 12px;
   border-radius: var(--radius-full);
   font-size: var(--fs-xs);
@@ -91,7 +91,7 @@
   font-family: var(--font-marathi);
   font-size: 2.75rem;
   font-weight: var(--fw-extrabold);
-  color: var(--color-primary);
+  color: var(--color-primary); /* Deep Leaf Green #254D32 */
   line-height: 1.15;
   margin: 0;
   letter-spacing: -0.5px;
@@ -100,7 +100,7 @@
 .hero-main-tagline {
   font-size: 1.85rem;
   font-weight: var(--fw-bold);
-  color: var(--color-secondary);
+  color: var(--color-secondary); /* Saffron Orange #E58A24 */
   line-height: 1.25;
   margin: 0;
   display: block;
@@ -109,7 +109,7 @@
 .hero-additional-tagline {
   font-size: 1.35rem;
   font-weight: var(--fw-semibold);
-  color: var(--color-primary-light);
+  color: var(--color-accent); /* Natural Green #3F7548 supporting text */
   line-height: 1.35;
   margin: 0;
   font-style: italic;
@@ -137,22 +137,22 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: var(--color-secondary);
-  color: var(--color-text-inverse);
+  background-color: var(--color-accent); /* Natural Green button */
+  color: #FFFFFF;
   padding: 14px 28px;
   border-radius: var(--radius-md);
   font-size: var(--fs-base);
   font-weight: var(--fw-bold);
   text-decoration: none;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 4px 14px rgba(63, 117, 72, 0.28);
   transition: all var(--transition-normal);
   border: 2px solid transparent;
 }
 
 .hero-btn-menu:hover {
-  background-color: var(--color-secondary-hover);
-  color: var(--color-text-inverse);
-  box-shadow: var(--shadow-lg);
+  background-color: var(--color-primary); /* Deep Leaf Green on hover */
+  color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(37, 77, 50, 0.35);
   transform: translateY(-2px);
 }
 
@@ -174,7 +174,7 @@
 
 .hero-btn-contact:hover {
   background-color: var(--color-primary);
-  color: var(--color-text-inverse);
+  color: #FFFFFF;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -216,16 +216,16 @@
   align-items: center;
 }
 
-/* Decorative backdrop circle */
+/* Decorative backdrop */
 .hero-visual-backdrop {
   position: absolute;
   width: 90%;
   height: 90%;
   border-radius: var(--radius-xl);
-  background: linear-gradient(135deg, rgba(84, 45, 29, 0.06) 0%, rgba(229, 138, 36, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(37, 77, 50, 0.08) 0%, rgba(63, 117, 72, 0.12) 100%);
   transform: rotate(-3deg);
   z-index: 0;
-  border: 2px dashed rgba(229, 138, 36, 0.25);
+  border: 2px dashed rgba(63, 117, 72, 0.3);
 }
 
 /* Primary Food Photography Frame (Bharit) */
@@ -248,14 +248,12 @@
 }
 
 .photo-image-container {
+  position: relative;
   width: 100%;
   aspect-ratio: 4 / 3;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  background-color: var(--color-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--color-bg-alt);
 }
 
 .hero-food-img {
@@ -266,19 +264,20 @@
 }
 
 .hero-primary-photo-card:hover .hero-food-img {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
+/* Caption bar under photo */
 .photo-caption-bar {
-  padding: 12px 6px 4px 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: var(--space-xs) 4px 0 4px;
 }
 
 .photo-title {
   font-family: var(--font-marathi);
-  font-size: var(--fs-md);
+  font-size: var(--fs-sm);
   font-weight: var(--fw-bold);
   color: var(--color-primary);
   margin: 0;
@@ -286,74 +285,79 @@
 
 .photo-badge-special {
   font-size: var(--fs-xs);
-  font-weight: var(--fw-bold);
   color: var(--color-secondary);
-  background-color: var(--color-secondary-light);
-  padding: 3px 10px;
-  border-radius: var(--radius-full);
+  font-weight: var(--fw-bold);
 }
 
-/* Secondary Floating Photo Card (Bharit Puri) */
+/* Secondary Floating Photo Badge (Bharit & Puri) */
 .hero-secondary-photo-badge {
   position: absolute;
   bottom: -20px;
   left: -20px;
   z-index: 2;
   background-color: var(--color-card-bg);
+  padding: 8px 16px 8px 10px;
   border-radius: var(--radius-lg);
-  padding: 8px 12px;
   box-shadow: var(--shadow-md);
-  border: 2px solid var(--color-secondary);
+  border: 1.5px solid var(--color-secondary);
   display: flex;
   align-items: center;
   gap: 12px;
-  max-width: 260px;
+  width: max-content;
+  max-width: calc(100% + 20px);
   transition: transform var(--transition-fast);
 }
 
 .hero-secondary-photo-badge:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
-.secondary-thumbnail {
-  width: 54px;
-  height: 54px;
+.secondary-thumbnail,
+.badge-thumb-container {
+  width: 52px;
+  height: 52px;
   border-radius: var(--radius-md);
   overflow: hidden;
   flex-shrink: 0;
-  background-color: var(--color-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--color-bg-alt);
 }
 
-.secondary-thumbnail img {
+.secondary-thumbnail img,
+.badge-thumb-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-.secondary-info {
+.secondary-info,
+.badge-text-group {
   display: flex;
   flex-direction: column;
+  gap: 2px;
+  white-space: nowrap;
 }
 
-.secondary-name {
+.secondary-name,
+.badge-title {
   font-family: var(--font-marathi);
   font-size: var(--fs-sm);
   font-weight: var(--fw-bold);
   color: var(--color-primary);
-  line-height: 1.2;
+  line-height: 1.25;
+  white-space: nowrap;
 }
 
-.secondary-tag {
+.secondary-tag,
+.badge-sub {
   font-size: var(--fs-xs);
   color: var(--color-secondary);
   font-weight: var(--fw-semibold);
-  margin-top: 2px;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
-/* Tasteful UI Placeholder when original photos are awaiting placement */
+/* Fallback Placeholders */
 .photo-placeholder {
   width: 100%;
   height: 100%;
@@ -362,17 +366,15 @@
   align-items: center;
   justify-content: center;
   padding: var(--space-lg);
-  background: linear-gradient(135deg, #FFFDF9 0%, var(--color-bg) 100%);
-  border: 2px dashed rgba(229, 138, 36, 0.4);
-  border-radius: var(--radius-lg);
   text-align: center;
-  color: var(--color-primary);
+  background-color: var(--color-bg-alt);
+  color: var(--color-text-muted);
 }
 
 .placeholder-icon {
-  width: 44px;
-  height: 44px;
-  color: var(--color-secondary);
+  width: 48px;
+  height: 48px;
+  color: var(--color-accent);
   margin-bottom: var(--space-xs);
 }
 
@@ -392,8 +394,8 @@
 
 .placeholder-code {
   display: inline-block;
-  background-color: var(--color-secondary-light);
-  color: var(--color-secondary);
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
   font-size: 0.7rem;
   padding: 2px 6px;
   border-radius: 4px;

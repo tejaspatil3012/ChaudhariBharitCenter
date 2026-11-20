@@ -1,56 +1,60 @@
 /* ==========================================================================
    Chaudhari Bharit Center - Design System Variables
-   Authentic Maharashtrian Theme & Color Palette
+   Natural Green & Authentic Traditional Maharashtrian Theme
    ========================================================================== */
 
 :root {
    /* ------------------------------------------------------------------------
-     1. Core Brand Color Palette (Strictly defined per specification)
-     ------------------------------------------------------------------------ */
-   --color-primary: #542D1D;
-   /* Dark Brown - Earthy, authentic clay & tradition */
+      1. Core Brand Color Palette (New Natural Green Theme)
+      ------------------------------------------------------------------------ */
+   --color-primary: #254D32;
+   /* Deep Leaf Green - Navbar, footer, important headings & dark sections */
    --color-secondary: #E58A24;
-   /* Saffron Orange - Fresh spices, festive energy */
+   /* Saffron Orange - Menu prices, festive highlights & important accents */
+   --color-accent: #3F7548;
+   /* Natural Green - Primary buttons, icons, links & highlights */
    --color-bg: #FFF8EC;
-   /* Cream - Warm, welcoming restaurant background */
+   /* Warm Cream - Main page backgrounds */
+   --color-bg-alt: #E8F0DF;
+   /* Soft Sage - Alternate section backgrounds & subtle cards */
    --color-card-bg: #FFFFFF;
    /* Card Background - Pure crisp white */
-   --color-text: #29231F;
-   /* Dark Charcoal - Ultra-readable typography */
-   --color-accent: #557647;
-   /* Natural Green - Fresh herbs, purity & farm-fresh */
+   --color-text: #1E2D22;
+   /* Deep Leaf Charcoal - High contrast readable typography */
 
    /* ------------------------------------------------------------------------
-     2. Derived & Semantic Tints
-     ------------------------------------------------------------------------ */
-   --color-primary-dark: #3D1F13;
-   /* Deep roasted brown for headers/footers */
-   --color-primary-light: #703D28;
-   /* Warm medium brown */
+      2. Derived & Semantic Tints
+      ------------------------------------------------------------------------ */
+   --color-primary-dark: #193622;
+   /* Ultra-deep leaf green for headers/footers */
+   --color-primary-light: #346340;
+   /* Medium leaf green */
    --color-secondary-hover: #D47916;
    /* Saffron hover state */
    --color-secondary-light: #FDF3E7;
-   /* Subtle saffron tint */
-   --color-accent-hover: #456239;
-   /* Forest green hover */
-   --color-accent-light: #EFF5ED;
-   /* Subtle green tint */
+   /* Subtle warm saffron tint */
+   --color-accent-dark: #254D32;
+   /* Deep leaf green */
+   --color-accent-hover: #325E3A;
+   /* Natural green hover state */
+   --color-accent-light: #E8F0DF;
+   /* Soft Sage tint */
 
-   --color-text-muted: #6E635C;
+   --color-text-muted: #536759;
    /* Secondary descriptive text */
-   --color-text-light: #968A82;
-   /* Subtle metadata / timestamps */
+   --color-text-light: #7E9284;
+   /* Subtle metadata / captions */
    --color-text-inverse: #FFFFFF;
    /* Text on dark/saturated backgrounds */
 
-   --color-border: #E8DCCB;
-   /* Warm subtle divider border */
-   --color-border-light: #F4ECE0;
+   --color-border: #D2DFC7;
+   /* Soft sage divider border */
+   --color-border-light: #E4EDDD;
    /* Ultra-light card borders */
 
    /* ------------------------------------------------------------------------
-     3. Typography
-     ------------------------------------------------------------------------ */
+      3. Typography
+      ------------------------------------------------------------------------ */
    --font-marathi: 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
    --font-english: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
    --font-family: var(--font-marathi);
@@ -85,8 +89,8 @@
    /* 48px */
 
    /* ------------------------------------------------------------------------
-     4. Spacing Scale
-     ------------------------------------------------------------------------ */
+      4. Spacing Scale
+      ------------------------------------------------------------------------ */
    --space-2xs: 4px;
    --space-xs: 8px;
    --space-sm: 12px;
@@ -98,16 +102,16 @@
    --space-4xl: 96px;
 
    /* ------------------------------------------------------------------------
-     5. Layout & Container Dimensions
-     ------------------------------------------------------------------------ */
+      5. Layout & Container Dimensions
+      ------------------------------------------------------------------------ */
    --container-max-width: 1200px;
    --container-narrow-width: 860px;
    --container-padding: 24px;
    --header-height: 76px;
 
    /* ------------------------------------------------------------------------
-     6. Border Radii (Professional, rounded Maharashtrian warmth)
-     ------------------------------------------------------------------------ */
+      6. Border Radii
+      ------------------------------------------------------------------------ */
    --radius-xs: 4px;
    --radius-sm: 8px;
    --radius-md: 12px;
@@ -116,28 +120,18 @@
    --radius-full: 9999px;
 
    /* ------------------------------------------------------------------------
-     7. Shadows (Subtle, warm-toned elevation)
-     ------------------------------------------------------------------------ */
-   --shadow-xs: 0 1px 3px rgba(84, 45, 29, 0.05);
-   --shadow-sm: 0 2px 8px rgba(84, 45, 29, 0.06);
-   --shadow-md: 0 6px 18px rgba(84, 45, 29, 0.08);
-   --shadow-lg: 0 12px 32px rgba(84, 45, 29, 0.12);
-   --shadow-card-hover: 0 14px 36px rgba(84, 45, 29, 0.14);
+      7. Shadows (Natural Soft Elevation)
+      ------------------------------------------------------------------------ */
+   --shadow-xs: 0 1px 3px rgba(37, 77, 50, 0.05);
+   --shadow-sm: 0 2px 8px rgba(37, 77, 50, 0.07);
+   --shadow-md: 0 6px 18px rgba(37, 77, 50, 0.10);
+   --shadow-lg: 0 12px 32px rgba(37, 77, 50, 0.13);
+   --shadow-card-hover: 0 14px 36px rgba(37, 77, 50, 0.16);
 
    /* ------------------------------------------------------------------------
-     8. Transitions
-     ------------------------------------------------------------------------ */
+      8. Transitions
+      ------------------------------------------------------------------------ */
    --transition-fast: 0.15s ease;
    --transition-normal: 0.25s ease;
    --transition-slow: 0.4s ease;
-
-   /* ------------------------------------------------------------------------
-     9. Responsive Breakpoints (Reference)
-     ------------------------------------------------------------------------
-     Small Mobile: < 480px
-     Mobile:       < 768px
-     Tablet:       768px - 1023px
-     Desktop:      >= 1024px
-     Large:        >= 1280px
-     ------------------------------------------------------------------------ */
 }

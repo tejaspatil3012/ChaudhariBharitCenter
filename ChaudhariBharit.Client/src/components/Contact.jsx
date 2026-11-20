@@ -130,7 +130,6 @@ const Contact = () => {
                 </svg>
               </div>
               <div className="contact-parcel-info">
-                <h4>{t('contact.serviceTitle')}</h4>
                 <p>{t('contact.serviceText')}</p>
               </div>
             </div>

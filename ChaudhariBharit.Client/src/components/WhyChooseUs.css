@@ -1,11 +1,12 @@
 /* ==========================================================================
    Chaudhari Bharit Center - Why Choose Us Section Styles
    Traditional Maharashtrian Hospitality & 4 Feature Cards Grid
+   Theme: Natural Green & Soft Sage Palette
    ========================================================================== */
 
 .why-choose-us-section {
   position: relative;
-  background-color: var(--color-card-bg);
+  background-color: var(--color-bg-alt);
   padding: var(--space-3xl) 0;
   border-bottom: 1px solid var(--color-border);
   scroll-margin-top: calc(var(--header-height) - 10px);
@@ -31,7 +32,7 @@
    -------------------------------------------------------------------------- */
 .why-card {
   position: relative;
-  background-color: var(--color-bg);
+  background-color: var(--color-card-bg);
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-lg);
   padding: var(--space-xl) var(--space-lg);
@@ -53,7 +54,7 @@
   height: 4px;
   background-color: var(--color-secondary);
   border-radius: var(--radius-full) var(--radius-full) 0 0;
-  opacity: 0.8;
+  opacity: 0.85;
   transition: height var(--transition-fast), background-color var(--transition-fast);
 }
 
@@ -72,6 +73,7 @@
   background-color: var(--color-accent);
 }
 
+.why-card.accent-deep-green::before,
 .why-card.accent-brown::before {
   background-color: var(--color-primary);
 }
@@ -81,8 +83,8 @@
   width: 64px;
   height: 64px;
   border-radius: var(--radius-md);
-  background-color: var(--color-card-bg);
-  color: var(--color-secondary);
+  background-color: var(--color-bg);
+  color: var(--color-accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,6 +92,10 @@
   border: 1.5px solid var(--color-border);
   box-shadow: var(--shadow-xs);
   transition: transform var(--transition-normal), background-color var(--transition-normal), color var(--transition-normal);
+}
+
+.why-card.accent-saffron .why-icon-box {
+  color: var(--color-secondary);
 }
 
 .why-card:hover .why-icon-box {
@@ -103,6 +109,13 @@
   background-color: var(--color-accent);
   color: var(--color-text-inverse);
   border-color: var(--color-accent);
+}
+
+.why-card.accent-deep-green:hover .why-icon-box,
+.why-card.accent-brown:hover .why-icon-box {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-color: var(--color-primary);
 }
 
 .why-icon-box svg {
@@ -145,15 +158,16 @@
 .why-trust-strip {
   margin-top: var(--space-2xl);
   padding: var(--space-md) var(--space-xl);
-  background-color: var(--color-bg);
+  background-color: var(--color-card-bg);
   border-radius: var(--radius-md);
-  border: 1px dashed var(--color-border);
+  border: 1.5px dashed var(--color-border);
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: var(--space-md);
   text-align: center;
+  box-shadow: var(--shadow-xs);
 }
 
 .trust-strip-item {

@@ -32,7 +32,7 @@ export const WhyChooseUs = () => {
       number: '02',
       title: t('whyChooseUs.card2Title'),
       description: t('whyChooseUs.card2Desc'),
-      accentClass: 'accent-brown',
+      accentClass: 'accent-deep-green',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           {/* Home / Homemade Kitchen Icon */}

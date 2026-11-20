@@ -139,7 +139,7 @@ export const Navbar = () => {
         {/* Right Side: Language Switcher & Contact Button */}
         <div className="navbar-actions">
           {/* Bilingual Switcher */}
-          <LanguageSwitcher />
+          <LanguageSwitcher isDark={true} />
 
           {/* Prominent Contact Us Button */}
           <a

@@ -77,7 +77,7 @@ export const About = () => {
                 {t('about.heading')}
               </h2>
               <span className="about-subheading">
-                {isMarathi ? 'खानदेशी चव... अस्सल मातीची!' : 'Authentic Khandeshi Flavours, Straight from Our Roots!'}
+                {isMarathi ? 'खान्देशी चव... अस्सल मातीची!' : 'Authentic Khandeshi Flavours, Straight from Our Roots!'}
               </span>
             </div>
 
@@ -114,7 +114,7 @@ export const About = () => {
              ================================================================= */}
           <div className="about-image-column">
             <div className="about-image-card">
-              <span className="about-image-floating-badge">
+              <span className="about-image-floating-badge about-corner-badge">
                 {t('about.imageBadge')}
               </span>
 

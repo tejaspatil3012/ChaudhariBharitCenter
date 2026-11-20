@@ -130,6 +130,7 @@ p {
   color: var(--color-accent);
 }
 
+.text-deep-green,
 .text-brown {
   color: var(--color-primary);
 }
@@ -232,15 +233,15 @@ p {
   outline-offset: 2px;
 }
 
-/* Primary Button - Dark Brown */
+/* Primary Button - Natural Green */
 .btn-primary {
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   color: var(--color-text-inverse);
   box-shadow: var(--shadow-sm);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary);
   color: var(--color-text-inverse);
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
@@ -260,15 +261,15 @@ p {
   transform: translateY(-2px);
 }
 
-/* Accent Button - Natural Green */
+/* Accent Button - Deep Leaf Green */
 .btn-accent {
-  background-color: var(--color-accent);
+  background-color: var(--color-primary);
   color: var(--color-text-inverse);
   box-shadow: var(--shadow-sm);
 }
 
 .btn-accent:hover {
-  background-color: var(--color-accent-hover);
+  background-color: var(--color-primary-dark);
   color: var(--color-text-inverse);
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
@@ -277,12 +278,12 @@ p {
 /* Outline Button */
 .btn-outline {
   background-color: transparent;
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .btn-outline:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   color: var(--color-text-inverse);
   transform: translateY(-2px);
 }

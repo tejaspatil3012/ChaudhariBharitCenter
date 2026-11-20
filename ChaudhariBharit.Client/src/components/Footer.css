@@ -1,11 +1,11 @@
 /* ==========================================================================
    Footer Component Styling - Chaudhari Bharit Center
-   Theme: Maharashtrian Traditional with Premium Dark Warmth
+   Theme: Deep Leaf Green (#254D32) & Saffron Orange Accent Palette
    ========================================================================== */
 
 .site-footer {
-  background-color: var(--color-primary-dark);
-  color: #F5EBE1;
+  background-color: var(--color-primary);
+  color: #E8F0DF;
   position: relative;
   overflow: hidden;
   border-top: 3px solid var(--color-secondary);
@@ -20,7 +20,7 @@
   transform: translateX(-50%);
   width: 600px;
   height: 200px;
-  background: radial-gradient(ellipse at top, rgba(229, 138, 36, 0.15) 0%, transparent 70%);
+  background: radial-gradient(ellipse at top, rgba(229, 138, 36, 0.18) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -56,7 +56,7 @@
   content: '';
   display: block;
   width: 32px;
-  height: 2px;
+  height: 2.5px;
   background-color: var(--color-secondary);
   border-radius: 2px;
   margin-top: 6px;
@@ -86,14 +86,14 @@
 
 .footer-brand-subtagline {
   font-size: var(--fs-xs);
-  color: #D6C2B4;
+  color: #D2DFC7;
   margin-bottom: var(--space-sm);
 }
 
 .footer-about-text {
   font-size: var(--fs-sm);
   line-height: 1.65;
-  color: #D6C2B4;
+  color: #D2DFC7;
   margin-bottom: var(--space-md);
 }
 
@@ -101,9 +101,9 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(85, 118, 71, 0.25);
-  border: 1px solid rgba(85, 118, 71, 0.6);
-  color: #A3D492;
+  background: rgba(63, 117, 72, 0.35);
+  border: 1px solid rgba(163, 212, 146, 0.5);
+  color: #E8F0DF;
   font-size: var(--fs-xs);
   font-weight: 600;
   padding: 0.4rem 0.85rem;
@@ -125,7 +125,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: #D6C2B4;
+  color: #D2DFC7;
   text-decoration: none;
   font-size: var(--fs-sm);
   font-weight: 500;
@@ -168,7 +168,7 @@
 .footer-contact-text {
   font-size: var(--fs-sm);
   line-height: 1.5;
-  color: #D6C2B4;
+  color: #D2DFC7;
 }
 
 .footer-contact-phone-group {
@@ -194,7 +194,7 @@
 }
 
 .footer-phone-person {
-  color: #D6C2B4;
+  color: #D2DFC7;
   font-size: var(--fs-xs);
   font-weight: 400;
 }
@@ -204,7 +204,7 @@
   align-items: center;
   gap: 0.4rem;
   margin-top: 4px;
-  color: var(--color-secondary-light);
+  color: #FFA834;
   font-size: var(--fs-xs);
   font-weight: 600;
   text-decoration: none;
@@ -230,7 +230,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #D6C2B4;
+  color: #D2DFC7;
   font-size: var(--fs-sm);
   font-weight: 500;
 }
@@ -245,9 +245,9 @@
    ========================================================================== */
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding: var(--space-lg) 0;
-  background-color: rgba(0, 0, 0, 0.18);
+  background-color: rgba(0, 0, 0, 0.22);
 }
 
 .footer-bottom-container {
@@ -257,18 +257,18 @@
   flex-wrap: wrap;
   gap: var(--space-md);
   font-size: var(--fs-xs);
-  color: #B5A192;
+  color: #D2DFC7;
 }
 
 .footer-copyright {
   margin: 0;
-  color: #D6C2B4;
+  color: #D2DFC7;
 }
 
 .footer-crafted-line {
   margin: 0;
   font-style: italic;
-  color: var(--color-secondary-light);
+  color: #FFA834;
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
