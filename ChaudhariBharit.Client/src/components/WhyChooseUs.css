@@ -1,0 +1,205 @@
+/* ==========================================================================
+   Chaudhari Bharit Center - Why Choose Us Section Styles
+   Traditional Maharashtrian Hospitality & 4 Feature Cards Grid
+   ========================================================================== */
+
+.why-choose-us-section {
+  position: relative;
+  background-color: var(--color-card-bg);
+  padding: var(--space-3xl) 0;
+  border-bottom: 1px solid var(--color-border);
+  scroll-margin-top: calc(var(--header-height) - 10px);
+}
+
+.why-choose-us-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* --------------------------------------------------------------------------
+   1. Cards Grid Layout
+   -------------------------------------------------------------------------- */
+.why-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+/* --------------------------------------------------------------------------
+   2. Feature Card Styles
+   -------------------------------------------------------------------------- */
+.why-card {
+  position: relative;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+  overflow: hidden;
+}
+
+.why-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--color-secondary);
+  border-radius: var(--radius-full) var(--radius-full) 0 0;
+  opacity: 0.8;
+  transition: height var(--transition-fast), background-color var(--transition-fast);
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--color-secondary);
+}
+
+.why-card:hover::before {
+  height: 6px;
+}
+
+/* Distinct card accents */
+.why-card.accent-green::before {
+  background-color: var(--color-accent);
+}
+
+.why-card.accent-brown::before {
+  background-color: var(--color-primary);
+}
+
+/* Icon Container */
+.why-icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-card-bg);
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+  border: 1.5px solid var(--color-border);
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition-normal), background-color var(--transition-normal), color var(--transition-normal);
+}
+
+.why-card:hover .why-icon-box {
+  transform: scale(1.08) rotate(-3deg);
+  background-color: var(--color-secondary);
+  color: var(--color-text-inverse);
+  border-color: var(--color-secondary);
+}
+
+.why-card.accent-green:hover .why-icon-box {
+  background-color: var(--color-accent);
+  color: var(--color-text-inverse);
+  border-color: var(--color-accent);
+}
+
+.why-icon-box svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Card Number Indicator */
+.why-card-number {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-extrabold);
+  color: var(--color-border);
+  letter-spacing: 0.5px;
+  user-select: none;
+}
+
+/* Card Typography */
+.why-card-title {
+  font-family: var(--font-marathi);
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+  margin: 0 0 var(--space-xs) 0;
+  line-height: 1.3;
+}
+
+.why-card-desc {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   3. Bottom Trust Strip
+   -------------------------------------------------------------------------- */
+.why-trust-strip {
+  margin-top: var(--space-2xl);
+  padding: var(--space-md) var(--space-xl);
+  background-color: var(--color-bg);
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  text-align: center;
+}
+
+.trust-strip-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+}
+
+.trust-strip-item svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   4. Responsive Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .why-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+}
+
+@media (max-width: 600px) {
+  .why-choose-us-section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .why-cards-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .why-card {
+    padding: var(--space-lg);
+  }
+
+  .why-trust-strip {
+    flex-direction: column;
+    gap: var(--space-xs);
+    align-items: flex-start;
+    padding: var(--space-md);
+  }
+}

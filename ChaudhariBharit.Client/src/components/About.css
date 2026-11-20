@@ -1,0 +1,372 @@
+/* ==========================================================================
+   Chaudhari Bharit Center - About Us Section Styles
+   Two-column Layout, Traditional Maharashtrian Warmth & Highlight Grid
+   ========================================================================== */
+
+.about-section {
+  position: relative;
+  background-color: var(--color-card-bg);
+  padding: var(--space-3xl) 0;
+  border-bottom: 1px solid var(--color-border);
+  scroll-margin-top: calc(var(--header-height) - 10px);
+}
+
+.about-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Two-column Layout on Desktop */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--space-3xl);
+}
+
+/* --------------------------------------------------------------------------
+   1. Left / Content Column
+   -------------------------------------------------------------------------- */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.about-header-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.about-badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-secondary-light);
+  color: var(--color-secondary);
+  border: 1px solid rgba(229, 138, 36, 0.3);
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.about-heading {
+  font-family: var(--font-marathi);
+  font-size: 2.25rem;
+  font-weight: var(--fw-extrabold);
+  color: var(--color-primary);
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+.about-subheading {
+  font-size: 1.35rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-secondary);
+  line-height: 1.3;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Narrative Text */
+.about-welcome {
+  font-size: 1.15rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.about-paragraph {
+  font-size: var(--fs-base);
+  color: var(--color-text);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.about-paragraph-invite {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  color: var(--color-primary-light);
+  line-height: 1.7;
+  margin: 0;
+  padding-left: var(--space-sm);
+  border-left: 3px solid var(--color-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   2. Highlights 2x2 Grid
+   -------------------------------------------------------------------------- */
+.about-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.about-highlight-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--color-bg);
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.about-highlight-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.highlight-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-secondary-light);
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-highlight-card:nth-child(3) .highlight-icon-box {
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+}
+
+.highlight-icon-box svg {
+  width: 18px;
+  height: 18px;
+}
+
+.highlight-text {
+  font-family: inherit;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+  line-height: 1.35;
+}
+
+/* --------------------------------------------------------------------------
+   3. Right / Food Image Column
+   -------------------------------------------------------------------------- */
+.about-image-column {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image-card {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  background-color: var(--color-bg);
+  border-radius: var(--radius-xl);
+  padding: 14px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.about-image-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.about-image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-food-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.about-image-card:hover .about-food-img {
+  transform: scale(1.03);
+}
+
+/* Floating Speciality Badge */
+.about-image-floating-badge {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: var(--color-secondary);
+  color: var(--color-text-inverse);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  box-shadow: var(--shadow-md);
+  letter-spacing: 0.3px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Tasteful Placeholder awaiting user-provided photograph */
+.about-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, #FFFDF9 0%, var(--color-bg) 100%);
+  border: 2px dashed rgba(229, 138, 36, 0.45);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.about-placeholder-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.about-placeholder-title {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+  margin: 0 0 4px 0;
+}
+
+.about-placeholder-note {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.about-placeholder-code {
+  display: inline-block;
+  background-color: var(--color-secondary-light);
+  color: var(--color-secondary);
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+/* Bottom Quality Banner inside Image Card */
+.about-image-footer {
+  margin-top: 10px;
+  padding: 8px 6px 2px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-footer-title {
+  font-family: var(--font-marathi);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+}
+
+.about-footer-tag {
+  font-size: var(--fs-xs);
+  color: var(--color-accent);
+  font-weight: var(--fw-bold);
+}
+
+/* --------------------------------------------------------------------------
+   4. Responsive Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  .about-grid {
+    gap: var(--space-2xl);
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-subheading {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .about-section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .about-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-badge {
+    align-self: center;
+  }
+
+  .about-paragraph-invite {
+    border-left: none;
+    border-top: 2px solid var(--color-secondary);
+    padding-left: 0;
+    padding-top: var(--space-xs);
+  }
+
+  .about-image-column {
+    order: -1; /* Place food image on top or bottom nicely */
+    width: 100%;
+  }
+
+  .about-image-card {
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 540px) {
+  .about-highlights-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .about-highlight-card {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .about-heading {
+    font-size: 1.75rem;
+  }
+
+  .about-subheading {
+    font-size: 1.1rem;
+  }
+
+  .about-image-card {
+    max-width: 100%;
+  }
+}

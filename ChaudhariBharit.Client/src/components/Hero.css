@@ -1,0 +1,508 @@
+/* ==========================================================================
+   Chaudhari Bharit Center - Hero Section Styles
+   Two-column Layout, Authentic Maharashtrian Identity & Food Photography
+   ========================================================================== */
+
+.hero-section {
+  position: relative;
+  background-color: var(--color-bg);
+  padding: var(--space-3xl) 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Subtle traditional background decorative warmth */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(229, 138, 36, 0.08) 0%, rgba(255, 248, 236, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: var(--space-3xl);
+}
+
+/* --------------------------------------------------------------------------
+   1. Left Column - Restaurant Information
+   -------------------------------------------------------------------------- */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.hero-badges-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.hero-badge-veg {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+  border: 1px solid rgba(85, 118, 71, 0.3);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.3px;
+}
+
+.veg-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+}
+
+.hero-badge-tagline {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--color-secondary-light);
+  color: var(--color-secondary);
+  border: 1px solid rgba(229, 138, 36, 0.3);
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  font-style: italic;
+}
+
+.hero-brand-name {
+  font-family: var(--font-marathi);
+  font-size: 2.75rem;
+  font-weight: var(--fw-extrabold);
+  color: var(--color-primary);
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.hero-main-tagline {
+  font-size: 1.85rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-secondary);
+  line-height: 1.25;
+  margin: 0;
+  display: block;
+}
+
+.hero-additional-tagline {
+  font-size: 1.35rem;
+  font-weight: var(--fw-semibold);
+  color: var(--color-primary-light);
+  line-height: 1.35;
+  margin: 0;
+  font-style: italic;
+}
+
+.hero-description {
+  font-size: var(--fs-md);
+  color: var(--color-text);
+  line-height: 1.7;
+  max-width: 560px;
+  margin: 0;
+}
+
+/* Hero Action Buttons */
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-xs);
+}
+
+.hero-btn-menu {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--color-secondary);
+  color: var(--color-text-inverse);
+  padding: 14px 28px;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  border: 2px solid transparent;
+}
+
+.hero-btn-menu:hover {
+  background-color: var(--color-secondary-hover);
+  color: var(--color-text-inverse);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.hero-btn-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 14px 26px;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  transition: all var(--transition-normal);
+}
+
+.hero-btn-contact:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Key Highlights Row */
+.hero-highlights-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  margin-top: var(--space-sm);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+}
+
+.highlight-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-secondary);
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   2. Right Column - Food Photography Display
+   -------------------------------------------------------------------------- */
+.hero-visual-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Decorative backdrop circle */
+.hero-visual-backdrop {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(84, 45, 29, 0.06) 0%, rgba(229, 138, 36, 0.1) 100%);
+  transform: rotate(-3deg);
+  z-index: 0;
+  border: 2px dashed rgba(229, 138, 36, 0.25);
+}
+
+/* Primary Food Photography Frame (Bharit) */
+.hero-primary-photo-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-xl);
+  padding: 12px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.hero-primary-photo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.photo-image-container {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-food-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.hero-primary-photo-card:hover .hero-food-img {
+  transform: scale(1.03);
+}
+
+.photo-caption-bar {
+  padding: 12px 6px 4px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photo-title {
+  font-family: var(--font-marathi);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.photo-badge-special {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  color: var(--color-secondary);
+  background-color: var(--color-secondary-light);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+/* Secondary Floating Photo Card (Bharit Puri) */
+.hero-secondary-photo-badge {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  z-index: 2;
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-lg);
+  padding: 8px 12px;
+  box-shadow: var(--shadow-md);
+  border: 2px solid var(--color-secondary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 260px;
+  transition: transform var(--transition-fast);
+}
+
+.hero-secondary-photo-badge:hover {
+  transform: scale(1.04);
+}
+
+.secondary-thumbnail {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secondary-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary-name {
+  font-family: var(--font-marathi);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.secondary-tag {
+  font-size: var(--fs-xs);
+  color: var(--color-secondary);
+  font-weight: var(--fw-semibold);
+  margin-top: 2px;
+}
+
+/* Tasteful UI Placeholder when original photos are awaiting placement */
+.photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  background: linear-gradient(135deg, #FFFDF9 0%, var(--color-bg) 100%);
+  border: 2px dashed rgba(229, 138, 36, 0.4);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.placeholder-icon {
+  width: 44px;
+  height: 44px;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.placeholder-title {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+  margin: 0 0 4px 0;
+}
+
+.placeholder-note {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.placeholder-code {
+  display: inline-block;
+  background-color: var(--color-secondary-light);
+  color: var(--color-secondary);
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 6px;
+  font-family: monospace;
+}
+
+/* --------------------------------------------------------------------------
+   3. Responsive Design
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .hero-grid {
+    gap: var(--space-xl);
+  }
+
+  .hero-brand-name {
+    font-size: 2.25rem;
+  }
+
+  .hero-main-tagline {
+    font-size: 1.6rem;
+  }
+
+  .hero-additional-tagline {
+    font-size: 1.15rem;
+  }
+
+  .hero-primary-photo-card {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .hero-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-badges-row {
+    justify-content: center;
+  }
+
+  .hero-description {
+    max-width: 100%;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-highlights-row {
+    justify-content: center;
+  }
+
+  .hero-visual-wrapper {
+    margin-top: var(--space-md);
+  }
+
+  .hero-secondary-photo-badge {
+    bottom: -15px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: var(--space-xl) 0;
+  }
+
+  .hero-brand-name {
+    font-size: 1.85rem;
+  }
+
+  .hero-main-tagline {
+    font-size: 1.35rem;
+  }
+
+  .hero-additional-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-btn-menu,
+  .hero-btn-contact {
+    width: 100%;
+  }
+
+  .hero-secondary-photo-badge {
+    position: static;
+    margin-top: var(--space-sm);
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hero-primary-photo-card {
+    max-width: 100%;
+  }
+}

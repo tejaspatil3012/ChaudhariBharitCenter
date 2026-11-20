@@ -1,0 +1,10 @@
+{
+  "buildCommand": "cd ChaudhariBharit.Client && npm install && npm run build",
+  "outputDirectory": "ChaudhariBharit.Client/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

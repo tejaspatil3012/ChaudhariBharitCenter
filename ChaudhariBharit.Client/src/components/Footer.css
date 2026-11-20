@@ -1,0 +1,308 @@
+/* ==========================================================================
+   Footer Component Styling - Chaudhari Bharit Center
+   Theme: Maharashtrian Traditional with Premium Dark Warmth
+   ========================================================================== */
+
+.site-footer {
+  background-color: var(--color-primary-dark);
+  color: #F5EBE1;
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid var(--color-secondary);
+}
+
+/* Subtle decorative warm ambient glow behind the footer */
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 200px;
+  background: radial-gradient(ellipse at top, rgba(229, 138, 36, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Main Footer Container */
+.footer-main {
+  padding: var(--space-3xl) 0 var(--space-2xl) 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr 1.3fr 0.9fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+/* Column Common Styling */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: var(--space-md);
+  position: relative;
+  display: inline-block;
+}
+
+.footer-col-title::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+/* Column 1: About Restaurant & Branding */
+.footer-brand {
+  margin-bottom: var(--space-sm);
+}
+
+.footer-brand-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin-bottom: 2px;
+  letter-spacing: 0.3px;
+}
+
+.footer-brand-tagline {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: #FFF8EC;
+  margin-bottom: 2px;
+  font-style: italic;
+}
+
+.footer-brand-subtagline {
+  font-size: var(--fs-xs);
+  color: #D6C2B4;
+  margin-bottom: var(--space-sm);
+}
+
+.footer-about-text {
+  font-size: var(--fs-sm);
+  line-height: 1.65;
+  color: #D6C2B4;
+  margin-bottom: var(--space-md);
+}
+
+.footer-parcel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(85, 118, 71, 0.25);
+  border: 1px solid rgba(85, 118, 71, 0.6);
+  color: #A3D492;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-full);
+  align-self: flex-start;
+}
+
+/* Column 2: Quick Links */
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer-link-item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #D6C2B4;
+  text-decoration: none;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.footer-link-item a svg {
+  color: var(--color-secondary);
+  transition: transform var(--transition-fast);
+}
+
+.footer-link-item a:hover {
+  color: var(--color-secondary);
+  transform: translateX(4px);
+}
+
+.footer-link-item a:hover svg {
+  transform: translateX(2px);
+}
+
+/* Column 3: Contact Info */
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.footer-contact-icon {
+  color: var(--color-secondary);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.footer-contact-text {
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+  color: #D6C2B4;
+}
+
+.footer-contact-phone-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-phone-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-phone-link:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.footer-phone-person {
+  color: #D6C2B4;
+  font-size: var(--fs-xs);
+  font-weight: 400;
+}
+
+.footer-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 4px;
+  color: var(--color-secondary-light);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.footer-map-link:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* Column 4: Our Speciality */
+.footer-speciality-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer-speciality-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #D6C2B4;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+.footer-speciality-item svg {
+  color: var(--color-secondary);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Bottom Footer Bar
+   ========================================================================== */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-lg) 0;
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+.footer-bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  font-size: var(--fs-xs);
+  color: #B5A192;
+}
+
+.footer-copyright {
+  margin: 0;
+  color: #D6C2B4;
+}
+
+.footer-crafted-line {
+  margin: 0;
+  font-style: italic;
+  color: var(--color-secondary-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.footer-crafted-line svg {
+  color: #E25C5C;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-main {
+    padding: var(--space-2xl) 0 var(--space-xl) 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer-bottom-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-xs);
+  }
+}

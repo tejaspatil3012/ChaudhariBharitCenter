@@ -1,0 +1,318 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "name": {
+        "mr": "सर्व पदार्थ",
+        "en": "All Items"
+      }
+    },
+    {
+      "id": "thalis",
+      "name": {
+        "mr": "थाली",
+        "en": "Thalis"
+      },
+      "subtitle": {
+        "mr": "पोटभर व तृप्ती देणारी अनलिमिटेड खानदेशी थाली",
+        "en": "Unlimited Authentic Khandeshi Thalis"
+      }
+    },
+    {
+      "id": "byWeight",
+      "name": {
+        "mr": "भरीत आणि कढी",
+        "en": "Bharit & Kadhi"
+      },
+      "subtitle": {
+        "mr": "घरगुती आनंदासाठी पार्सल व वजनावर उपलब्ध",
+        "en": "Available for Takeaway & Parcel by Weight/Volume"
+      }
+    },
+    {
+      "id": "otherItems",
+      "name": {
+        "mr": "इतर पदार्थ",
+        "en": "Other Items"
+      },
+      "subtitle": {
+        "mr": "भाकरी, पुरी, शेव भाजी आणि तोंडी लावण्यासाठी खास पदार्थ",
+        "en": "Bhakri, Puri, Shev Bhaji & Traditional Sides"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "category": "thalis",
+      "name": {
+        "mr": "भरीत भाकरी थाली (अनलिमिटेड)",
+        "en": "Bharit Bhakri Thali (Unlimited)"
+      },
+      "price": 150,
+      "image": "/images/menu/bharit-bhakri-thali.jpg",
+      "isSpecial": true,
+      "badge": {
+        "mr": "अनलिमिटेड",
+        "en": "Unlimited"
+      },
+      "description": {
+        "mr": "चुलीवर भाजलेले वांग्याचे भरीत, गरमागरम भाकरी, कढी, ठेचा आणि कांदा (अनलिमिटेड)",
+        "en": "Woodfire roasted bharit, piping hot bhakri, kadhi, thecha & onion (Unlimited)"
+      }
+    },
+    {
+      "id": 2,
+      "category": "thalis",
+      "name": {
+        "mr": "भरीत पुरी थाली (अनलिमिटेड)",
+        "en": "Bharit Puri Thali (Unlimited)"
+      },
+      "price": 170,
+      "image": "/images/menu/bharit-puri-thali.jpg",
+      "isSpecial": true,
+      "badge": {
+        "mr": "अनलिमिटेड",
+        "en": "Unlimited"
+      },
+      "description": {
+        "mr": "अस्सल खानदेशी भरीत, खमंग गरमागरम पुरी, चवदार कढी आणि तोंडी लावणं (अनलिमिटेड)",
+        "en": "Authentic Khandeshi bharit, golden crispy puris, flavorful kadhi & sides (Unlimited)"
+      }
+    },
+    {
+      "id": 3,
+      "category": "byWeight",
+      "name": {
+        "mr": "भरीत 1kg",
+        "en": "Bharit 1kg"
+      },
+      "price": 250,
+      "image": "/images/menu/bharit-1kg.jpg",
+      "badge": {
+        "mr": "१ किलो",
+        "en": "1 kg"
+      },
+      "description": {
+        "mr": "घरगुती चवीचे ताज्या चुलीवर भाजलेले अस्सल खानदेशी भरीत (१ किलो पार्सल)",
+        "en": "Authentic woodfire-roasted Khandeshi bharit packed fresh (1kg parcel)"
+      }
+    },
+    {
+      "id": 4,
+      "category": "byWeight",
+      "name": {
+        "mr": "भरीत 500g",
+        "en": "Bharit 500g"
+      },
+      "price": 125,
+      "image": "/images/menu/bharit-500g.jpg",
+      "badge": {
+        "mr": "५०० ग्रॅम",
+        "en": "500 g"
+      },
+      "description": {
+        "mr": "अस्सल वांग्याचे भरीत (५०० ग्रॅम पार्सल)",
+        "en": "Authentic baingan bharit (500g parcel)"
+      }
+    },
+    {
+      "id": 5,
+      "category": "byWeight",
+      "name": {
+        "mr": "भरीत 250g",
+        "en": "Bharit 250g"
+      },
+      "price": 65,
+      "image": "/images/menu/bharit-250g.jpg",
+      "badge": {
+        "mr": "२५० ग्रॅम",
+        "en": "250 g"
+      },
+      "description": {
+        "mr": "अस्सल वांग्याचे भरीत (२५० ग्रॅम पार्सल)",
+        "en": "Authentic baingan bharit (250g parcel)"
+      }
+    },
+    {
+      "id": 6,
+      "category": "byWeight",
+      "name": {
+        "mr": "ताकाची कढी 500ML",
+        "en": "Buttermilk Kadhi 500ML"
+      },
+      "price": 40,
+      "image": "/images/menu/buttermilk-kadhi-500ml.jpg",
+      "badge": {
+        "mr": "५०० मिली",
+        "en": "500 ML"
+      },
+      "description": {
+        "mr": "गावरान ताकाची खमंग कढी (५०० मिली पार्सल)",
+        "en": "Traditional spiced buttermilk kadhi (500ml parcel)"
+      }
+    },
+    {
+      "id": 7,
+      "category": "byWeight",
+      "name": {
+        "mr": "कोकम कढी 500ML",
+        "en": "Kokum Kadhi 500ML"
+      },
+      "price": 40,
+      "image": "/images/menu/kokum-kadhi-500ml.jpg",
+      "badge": {
+        "mr": "५०० मिली",
+        "en": "500 ML"
+      },
+      "description": {
+        "mr": "पाचक, चवदार आणि आंबट-गोड कोकम कढी (५०० मिली पार्सल)",
+        "en": "Digestive, savory, tangy-sweet kokum kadhi (500ml parcel)"
+      }
+    },
+    {
+      "id": 8,
+      "category": "otherItems",
+      "name": {
+        "mr": "शेव भाजी प्लेट",
+        "en": "Shev Bhaji Plate"
+      },
+      "price": 90,
+      "image": "/images/menu/shev-bhaji.jpg",
+      "badge": {
+        "mr": "स्पेशल प्लेट",
+        "en": "Special Plate"
+      },
+      "description": {
+        "mr": "झणझणीत खानदेशी तर्री रस्सा आणि कुरकुरीत शेव",
+        "en": "Spicy Khandeshi tarri gravy served with crunchy shev"
+      }
+    },
+    {
+      "id": 9,
+      "category": "otherItems",
+      "name": {
+        "mr": "राईस प्लेट",
+        "en": "Rice Plate"
+      },
+      "price": 90,
+      "image": "/images/menu/rice-plate.jpg",
+      "badge": {
+        "mr": "१ प्लेट",
+        "en": "1 Plate"
+      },
+      "description": {
+        "mr": "गरमागरम सुवासिक वाफाळलेला भात प्लेट",
+        "en": "Steamed aromatic hot rice plate"
+      }
+    },
+    {
+      "id": 10,
+      "category": "otherItems",
+      "name": {
+        "mr": "कोकम कढी (वाटी)",
+        "en": "Kokum Kadhi (Bowl)"
+      },
+      "price": 10,
+      "image": "/images/menu/kokum-kadhi-bowl.jpg",
+      "badge": {
+        "mr": "१ वाटी",
+        "en": "1 Bowl"
+      },
+      "description": {
+        "mr": "ताजी चवदार कोकम कढी (१ वाटी)",
+        "en": "Fresh tangy kokum kadhi (1 bowl)"
+      }
+    },
+    {
+      "id": 11,
+      "category": "otherItems",
+      "name": {
+        "mr": "ताकाची कढी (वाटी)",
+        "en": "Buttermilk Kadhi (Bowl)"
+      },
+      "price": 10,
+      "image": "/images/menu/buttermilk-kadhi-bowl.jpg",
+      "badge": {
+        "mr": "१ वाटी",
+        "en": "1 Bowl"
+      },
+      "description": {
+        "mr": "घरगुती चवीची ताकाची कढी (१ वाटी)",
+        "en": "Homemade spiced buttermilk kadhi (1 bowl)"
+      }
+    },
+    {
+      "id": 12,
+      "category": "otherItems",
+      "name": {
+        "mr": "कळण्याची पुरी",
+        "en": "Kalnyachi Puri"
+      },
+      "price": 12,
+      "image": "/images/menu/kalnyachi-puri.jpg",
+      "badge": {
+        "mr": "१ नग",
+        "en": "1 Pc"
+      },
+      "description": {
+        "mr": "पारंपरिक खानदेशी कळण्याची खुसखुशीत पुरी (१ नग)",
+        "en": "Crispy traditional Khandeshi kalna flour puri (1 pc)"
+      }
+    },
+    {
+      "id": 13,
+      "category": "otherItems",
+      "name": {
+        "mr": "कळण्याची भाकरी",
+        "en": "Kalnyachi Bhakri"
+      },
+      "price": 25,
+      "image": "/images/menu/kalnyachi-bhakri.jpg",
+      "badge": {
+        "mr": "१ नग",
+        "en": "1 Pc"
+      },
+      "description": {
+        "mr": "चुलीवर भाजलेली मऊ व रुचकर कळण्याची भाकरी (१ नग)",
+        "en": "Authentic woodfire-cooked rustic kalna bhakri (1 pc)"
+      }
+    },
+    {
+      "id": 14,
+      "category": "otherItems",
+      "name": {
+        "mr": "पोळी (चपाती)",
+        "en": "Poli (Chapati)"
+      },
+      "price": 15,
+      "image": "/images/menu/poli-chapati.jpg",
+      "badge": {
+        "mr": "१ नग",
+        "en": "1 Pc"
+      },
+      "description": {
+        "mr": "मऊ लुसलुशीत गव्हाची घरगुती पोळी (१ नग)",
+        "en": "Soft, freshly rolled whole wheat chapati (1 pc)"
+      }
+    },
+    {
+      "id": 15,
+      "category": "otherItems",
+      "name": {
+        "mr": "साधी पुरी",
+        "en": "Sadhi Puri (Plain Puri)"
+      },
+      "price": 10,
+      "image": "/images/menu/sadhi-puri.jpg",
+      "badge": {
+        "mr": "१ नग",
+        "en": "1 Pc"
+      },
+      "description": {
+        "mr": "गरमागरम तेलात तळलेली साधी पुरी (१ नग)",
+        "en": "Freshly fried golden puffed plain puri (1 pc)"
+      }
+    }
+  ]
+}

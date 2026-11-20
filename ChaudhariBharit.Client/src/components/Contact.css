@@ -1,0 +1,446 @@
+/* ==========================================================================
+   Contact Section Styling - Chaudhari Bharit Center
+   Theme: Maharashtrian Traditional with Modern Warmth
+   ========================================================================== */
+
+.contact-section {
+  padding: var(--space-3xl) 0;
+  background-color: var(--color-bg);
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: 80px;
+}
+
+/* Subtle decorative backdrop glow */
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(229, 138, 36, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.contact-section::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(85, 118, 71, 0.07) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Section Header */
+.contact-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto var(--space-2xl) auto;
+}
+
+.contact-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(229, 138, 36, 0.12);
+  color: var(--color-secondary-dark);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-sm);
+  border: 1px solid rgba(229, 138, 36, 0.3);
+}
+
+.contact-heading {
+  font-family: var(--font-heading);
+  font-size: var(--fs-3xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.contact-subtitle {
+  font-size: var(--fs-base);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.contact-divider {
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-secondary), transparent);
+  margin: var(--space-md) auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Main Grid Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: var(--space-xl);
+  align-items: stretch;
+}
+
+/* Left Column: Info Stack */
+.contact-info-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+/* Common Contact Card Style */
+.contact-card {
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(84, 45, 29, 0.08);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid rgba(84, 45, 29, 0.08);
+}
+
+.contact-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: rgba(229, 138, 36, 0.12);
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-card-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+/* Persons Contact List */
+.contact-persons-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.contact-person-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-bg);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(84, 45, 29, 0.06);
+  flex-wrap: wrap;
+}
+
+.contact-person-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-person-name {
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.contact-person-phone {
+  font-size: var(--fs-base);
+  font-weight: 600;
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color var(--transition-fast);
+}
+
+.contact-person-phone:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.contact-call-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.contact-call-btn:hover {
+  background-color: var(--color-secondary);
+  color: #FFFFFF;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(229, 138, 36, 0.35);
+}
+
+/* WhatsApp Direct CTA */
+.contact-whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #25D366;
+  color: #FFFFFF;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.28);
+  transition: all var(--transition-fast);
+  width: 100%;
+}
+
+.contact-whatsapp-btn:hover {
+  background-color: #1EBE5D;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+}
+
+/* Address Card */
+.contact-address-text {
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0;
+  padding-left: 2px;
+}
+
+/* Parcel Facility Highlight Banner */
+.contact-parcel-banner {
+  background: linear-gradient(135deg, rgba(85, 118, 71, 0.12) 0%, rgba(85, 118, 71, 0.05) 100%);
+  border: 1.5px dashed var(--color-accent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.contact-parcel-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(85, 118, 71, 0.25);
+}
+
+.contact-parcel-info h4 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--color-accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 2px 0;
+}
+
+.contact-parcel-info p {
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Right Column: Google Maps Container */
+.contact-map-wrapper {
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(84, 45, 29, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact-map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid rgba(84, 45, 29, 0.08);
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.contact-map-title-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.contact-map-external-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: rgba(229, 138, 36, 0.1);
+  color: var(--color-secondary-dark);
+  border: 1px solid rgba(229, 138, 36, 0.3);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.contact-map-external-link:hover {
+  background-color: var(--color-secondary);
+  color: #FFFFFF;
+  border-color: var(--color-secondary);
+}
+
+.contact-map-iframe-container {
+  width: 100%;
+  flex: 1;
+  min-height: 360px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(84, 45, 29, 0.1);
+  background-color: #EEE;
+}
+
+.contact-map-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  border: none;
+  display: block;
+}
+
+.contact-map-footer {
+  margin-top: var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.contact-map-caption {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.contact-map-directions-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.contact-map-directions-btn:hover {
+  background-color: var(--color-secondary);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 960px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .contact-map-iframe-container {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .contact-heading {
+    font-size: var(--fs-2xl);
+  }
+
+  .contact-person-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+
+  .contact-call-btn {
+    align-self: flex-start;
+  }
+
+  .contact-map-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-map-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-map-directions-btn {
+    justify-content: center;
+  }
+
+  .contact-map-iframe-container {
+    min-height: 280px;
+  }
+}
