@@ -236,6 +236,32 @@
   box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
 }
 
+/* Instagram Direct CTA */
+.contact-instagram-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #FFFFFF;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(220, 39, 67, 0.28);
+  transition: all var(--transition-fast);
+  width: 100%;
+  margin-top: var(--space-xs);
+}
+
+.contact-instagram-btn:hover {
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(220, 39, 67, 0.42);
+  filter: brightness(1.06);
+}
+
 /* Address Card */
 .contact-address-text {
   font-size: var(--fs-base);
@@ -243,6 +269,27 @@
   color: var(--color-text);
   margin: 0;
   padding-left: 2px;
+}
+
+.contact-timing-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: var(--space-sm);
+  padding-top: var(--space-xs);
+  border-top: 1px dashed var(--color-border-light);
+}
+
+.contact-timing-icon {
+  color: var(--color-secondary);
+  flex-shrink: 0;
+}
+
+.contact-timing-text {
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.4;
 }
 
 /* Parcel Facility Highlight Banner */
@@ -313,6 +360,13 @@
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+}
+
+.contact-map-subtitle {
+  display: block;
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  margin-top: 2px;
 }
 
 .contact-map-external-link {

@@ -84,55 +84,41 @@
       "id": 3,
       "category": "byWeight",
       "name": {
-        "mr": "भरीत 1kg",
-        "en": "Bharit 1kg"
-      },
-      "price": 250,
-      "image": "/images/menu/bharit-1kg.jpg",
-      "badge": {
-        "mr": "१ किलो",
-        "en": "1 kg"
-      },
-      "description": {
-        "mr": "घरगुती चवीचे ताज्या चुलीवर भाजलेले अस्सल खान्देशी भरीत (१ किलो पार्सल)",
-        "en": "Authentic woodfire-roasted Khandeshi bharit packed fresh (1kg parcel)"
-      }
-    },
-    {
-      "id": 4,
-      "category": "byWeight",
-      "name": {
-        "mr": "भरीत 500g",
-        "en": "Bharit 500g"
-      },
-      "price": 125,
-      "image": "/images/menu/bharit-500g.jpg",
-      "badge": {
-        "mr": "५०० ग्रॅम",
-        "en": "500 g"
-      },
-      "description": {
-        "mr": "अस्सल वांग्याचे भरीत (५०० ग्रॅम पार्सल)",
-        "en": "Authentic baingan bharit (500g parcel)"
-      }
-    },
-    {
-      "id": 5,
-      "category": "byWeight",
-      "name": {
-        "mr": "भरीत 250g",
-        "en": "Bharit 250g"
+        "mr": "भरीत",
+        "en": "Bharit"
       },
       "price": 65,
-      "image": "/images/menu/bharit-250g.jpg",
-      "badge": {
-        "mr": "२५० ग्रॅम",
-        "en": "250 g"
-      },
+      "image": "/images/menu/bharit-1kg.jpg",
       "description": {
-        "mr": "अस्सल वांग्याचे भरीत (२५० ग्रॅम पार्सल)",
-        "en": "Authentic baingan bharit (250g parcel)"
-      }
+        "mr": "घरगुती चवीचे ताज्या चुलीवर भाजलेले अस्सल खान्देशी भरीत",
+        "en": "Authentic woodfire-roasted Khandeshi bharit packed fresh"
+      },
+      "variants": [
+        {
+          "id": "250g",
+          "label": {
+            "mr": "२५० ग्रॅम",
+            "en": "250 g"
+          },
+          "price": 65
+        },
+        {
+          "id": "500g",
+          "label": {
+            "mr": "५०० ग्रॅम",
+            "en": "500 g"
+          },
+          "price": 125
+        },
+        {
+          "id": "1kg",
+          "label": {
+            "mr": "१ किलो",
+            "en": "1 kg"
+          },
+          "price": 250
+        }
+      ]
     },
     {
       "id": 6,

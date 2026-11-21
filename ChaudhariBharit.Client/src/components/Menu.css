@@ -270,6 +270,49 @@
   margin: 0;
 }
 
+/* Portion / Weight Variants Selector Bar */
+.menu-variants-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: var(--space-xs) 0;
+}
+
+.menu-variant-pill {
+  appearance: none;
+  background-color: var(--color-card-bg);
+  border: 1.2px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 5px 14px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+  line-height: 1.2;
+}
+
+.menu-variant-pill:hover {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.menu-variant-pill.active {
+  background-color: rgba(229, 138, 36, 0.08);
+  border: 1.8px solid var(--color-secondary);
+  color: var(--color-secondary);
+  font-weight: 700;
+  box-shadow: 0 1px 4px rgba(229, 138, 36, 0.12);
+}
+
+.menu-variant-pill:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 1px;
+}
+
 /* Card Footer: Saffron Orange Price & Fresh Tag */
 .menu-card-footer {
   display: flex;

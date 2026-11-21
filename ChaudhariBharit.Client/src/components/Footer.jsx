@@ -11,6 +11,7 @@ const Footer = () => {
 
   const mapQuery = encodeURIComponent('Radhakrishna Traders Yawal Chopda Road Kingaon Yawal Jalgaon');
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
+  const instagramUrl = 'https://www.instagram.com/chaudhari_bharit_center?mdxt=a3kzN3NtZ2l5anFj';
 
   const navLinks = [
     { id: 'home', label: t('footer.links.home') },
@@ -130,6 +131,25 @@ const Footer = () => {
                         {t('footer.openMap')} →
                       </a>
                     </div>
+                  </div>
+                </div>
+
+                {/* Instagram Profile */}
+                <div className="footer-contact-item">
+                  <svg className="footer-contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                  <div>
+                    <a
+                      href={instagramUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="footer-instagram-link"
+                    >
+                      @chaudhari_bharit_center
+                    </a>
                   </div>
                 </div>
               </div>
