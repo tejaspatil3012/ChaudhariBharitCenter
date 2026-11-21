@@ -50,7 +50,7 @@
         "en": "Bharit Bhakri Thali (Unlimited)"
       },
       "price": 150,
-      "image": "/images/menu/bharit-bhakri-thali.jpg",
+      "image": "/images/menu/bharit-bhakri-thali.jpg?v=2",
       "isSpecial": true,
       "badge": {
         "mr": "अनलिमिटेड",
@@ -69,7 +69,7 @@
         "en": "Bharit Puri Thali (Unlimited)"
       },
       "price": 170,
-      "image": "/images/menu/bharit-puri-thali.jpg",
+      "image": "/images/menu/bharit-puri-thali.jpg?v=2",
       "isSpecial": true,
       "badge": {
         "mr": "अनलिमिटेड",
@@ -88,7 +88,7 @@
         "en": "Bharit"
       },
       "price": 65,
-      "image": "/images/menu/bharit-1kg.jpg",
+      "image": "/images/menu/bharit-1kg.jpg?v=2",
       "description": {
         "mr": "घरगुती चवीचे ताज्या चुलीवर भाजलेले अस्सल खान्देशी भरीत",
         "en": "Authentic woodfire-roasted Khandeshi bharit packed fresh"
@@ -128,7 +128,7 @@
         "en": "Buttermilk Kadhi 500ML"
       },
       "price": 40,
-      "image": "/images/menu/buttermilk-kadhi-500ml.jpg",
+      "image": "/images/menu/buttermilk-kadhi-500ml.jpg?v=2",
       "badge": {
         "mr": "५०० मिली",
         "en": "500 ML"
@@ -146,7 +146,7 @@
         "en": "Kokum Kadhi 500ML"
       },
       "price": 40,
-      "image": "/images/menu/kokum-kadhi-500ml.jpg",
+      "image": "/images/menu/kokum-kadhi-500ml.jpg?v=2",
       "badge": {
         "mr": "५०० मिली",
         "en": "500 ML"
@@ -200,7 +200,7 @@
         "en": "Kokum Kadhi (Bowl)"
       },
       "price": 10,
-      "image": "/images/menu/kokum-kadhi-bowl.jpg",
+      "image": "/images/menu/kokum-kadhi-bowl.jpg?v=2",
       "badge": {
         "mr": "१ वाटी",
         "en": "1 Bowl"
@@ -218,7 +218,7 @@
         "en": "Buttermilk Kadhi (Bowl)"
       },
       "price": 10,
-      "image": "/images/menu/buttermilk-kadhi-bowl.jpg",
+      "image": "/images/menu/buttermilk-kadhi-bowl.jpg?v=2",
       "badge": {
         "mr": "१ वाटी",
         "en": "1 Bowl"
@@ -236,7 +236,7 @@
         "en": "Kalnyachi Puri"
       },
       "price": 12,
-      "image": "/images/menu/kalnyachi-puri.jpg?v=2",
+      "image": "/images/menu/kalnyachi-puri.jpg?v=3",
       "badge": {
         "mr": "१ नग",
         "en": "1 Pc"
@@ -254,7 +254,7 @@
         "en": "Kalnyachi Bhakri"
       },
       "price": 25,
-      "image": "/images/menu/kalnyachi-bhakri.jpg?v=2",
+      "image": "/images/menu/kalnyachi-bhakri.jpg?v=3",
       "badge": {
         "mr": "१ नग",
         "en": "1 Pc"
@@ -290,7 +290,7 @@
         "en": "Sadhi Puri (Plain Puri)"
       },
       "price": 10,
-      "image": "/images/menu/sadhi-puri.jpg?v=2",
+      "image": "/images/menu/sadhi-puri.jpg?v=3",
       "badge": {
         "mr": "१ नग",
         "en": "1 Pc"

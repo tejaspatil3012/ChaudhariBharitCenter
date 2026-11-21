@@ -32,7 +32,7 @@ export const Gallery = () => {
     {
       id: 'p2',
       type: 'photo',
-      image: '/images/gallery/gallery-restaurant-counter.jpg',
+      image: '/images/gallery/gallery-restaurant-counter.jpg?v=2',
       title: '',
       description: t('gallery.item10Desc'),
       isProminent: false,
@@ -51,7 +51,7 @@ export const Gallery = () => {
       id: 'v1',
       type: 'video',
       videoSrc: '/videos/video-khandeshi-bharit-making.mp4',
-      poster: '/images/gallery/poster-khandeshi-bharit-making.jpg',
+      poster: '/images/gallery/poster-khandeshi-bharit-making.jpg?v=2',
       title: t('gallery.video1Title'),
       description: t('gallery.video1Desc'),
       duration: '0:21',
@@ -61,7 +61,7 @@ export const Gallery = () => {
       id: 'v2',
       type: 'video',
       videoSrc: '/videos/video-traditional-cooking-dining.mp4',
-      poster: '/images/gallery/poster-traditional-cooking-dining.jpg',
+      poster: '/images/gallery/poster-traditional-cooking-dining.jpg?v=2',
       title: t('gallery.video2Title'),
       description: t('gallery.video2Desc'),
       duration: '0:42',
@@ -70,7 +70,7 @@ export const Gallery = () => {
     {
       id: 'p4',
       type: 'photo',
-      image: '/images/gallery/gallery-bharit.jpg',
+      image: '/images/gallery/gallery-bharit.jpg?v=2',
       title: t('gallery.item1Title'),
       description: t('gallery.item1Desc'),
       isProminent: false,
@@ -115,7 +115,7 @@ export const Gallery = () => {
     {
       id: 'p9',
       type: 'photo',
-      image: '/images/gallery/gallery-kokum-kadhi.jpg',
+      image: '/images/menu/kokum-kadhi-bowl.jpg?v=2',
       title: t('gallery.item5Title'),
       description: t('gallery.item5Desc'),
       isProminent: false,
@@ -124,7 +124,7 @@ export const Gallery = () => {
     {
       id: 'p10',
       type: 'photo',
-      image: '/images/gallery/gallery-buttermilk-kadhi.jpg',
+      image: '/images/menu/buttermilk-kadhi-bowl.jpg?v=2',
       title: t('gallery.item6Title'),
       description: t('gallery.item6Desc'),
       isProminent: false,

@@ -39,9 +39,6 @@ export const Hero = () => {
                 <span className="veg-dot" aria-hidden="true"></span>
                 <span>{t('common.pureVeg')}</span>
               </span>
-              <span className="hero-badge-tagline">
-                {t('hero.secondaryTagline')}
-              </span>
             </div>
 
             {/* Restaurant Brand Name */}
@@ -177,7 +174,7 @@ export const Hero = () => {
               <div className="photo-image-container">
                 {!primaryImgError ? (
                   <img
-                    src="/images/bharit.jpg"
+                    src="/images/bharit.jpg?v=2"
                     alt={t('hero.primaryImageAlt')}
                     className="hero-food-img"
                     onError={() => setPrimaryImgError(true)}

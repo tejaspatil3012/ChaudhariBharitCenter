@@ -315,6 +315,15 @@
     gap: var(--space-xl);
   }
 
+  .footer-brand-title {
+    margin-bottom: var(--space-xs);
+  }
+
+  .footer-brand-tagline,
+  .footer-brand-subtagline {
+    display: none;
+  }
+
   .footer-bottom-container {
     flex-direction: column;
     align-items: center;

@@ -435,7 +435,7 @@
 
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-2xl);
+    gap: var(--space-xl);
   }
 
   .hero-content {
@@ -448,7 +448,7 @@
   }
 
   .hero-description {
-    max-width: 100%;
+    max-width: 580px;
   }
 
   .hero-cta-group {
@@ -461,50 +461,164 @@
   }
 
   .hero-visual-wrapper {
-    margin-top: var(--space-md);
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+    margin: var(--space-md) auto 0 auto;
+    position: relative;
+  }
+
+  .hero-visual-backdrop {
+    display: none;
+  }
+
+  .hero-primary-photo-card {
+    width: 100%;
+    max-width: 100%;
   }
 
   .hero-secondary-photo-badge {
-    bottom: -15px;
-    left: 10px;
+    position: static;
+    margin-top: 12px;
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-start;
   }
 }
 
 @media (max-width: 480px) {
   .hero-section {
-    padding: var(--space-xl) 0;
+    padding: var(--space-lg) 0 var(--space-xl) 0;
+  }
+
+  .hero-grid {
+    gap: var(--space-lg);
   }
 
   .hero-brand-name {
-    font-size: 1.85rem;
+    font-size: 1.95rem;
+    letter-spacing: -0.2px;
+    line-height: 1.2;
   }
 
   .hero-main-tagline {
     font-size: 1.35rem;
+    line-height: 1.25;
+    margin-top: 2px;
   }
 
   .hero-additional-tagline {
-    font-size: 1rem;
+    font-size: 1.02rem;
+    line-height: 1.35;
+  }
+
+  .hero-description {
+    font-size: 0.94rem;
+    line-height: 1.55;
+    margin: var(--space-xs) 0 var(--space-sm) 0;
   }
 
   .hero-cta-group {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
   }
 
   .hero-btn-menu,
   .hero-btn-contact {
     width: 100%;
+    min-height: 48px;
+    font-size: 0.98rem;
+    justify-content: center;
+    border-radius: var(--radius-md);
   }
 
-  .hero-secondary-photo-badge {
-    position: static;
-    margin-top: var(--space-sm);
-    max-width: 100%;
+  /* Highlights: Clean structured card with 3 items */
+  .hero-highlights-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+    background-color: rgba(63, 117, 72, 0.06);
+    border: 1px solid rgba(63, 117, 72, 0.16);
+    border-radius: var(--radius-md);
+    padding: 12px 14px;
     width: 100%;
+    margin-top: var(--space-xs);
+  }
+
+  .highlight-item {
+    font-size: 0.88rem;
+    gap: 10px;
+  }
+
+  .highlight-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Mobile Hero Photo Card */
+  .hero-visual-wrapper {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: var(--space-sm) 0 0 0;
   }
 
   .hero-primary-photo-card {
+    width: 100%;
     max-width: 100%;
+    padding: 8px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 6px 20px rgba(37, 77, 50, 0.12);
+  }
+
+  .photo-image-container {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-md);
+  }
+
+  .photo-caption-bar {
+    padding: 8px 4px 2px 4px;
+  }
+
+  .photo-title {
+    font-size: 0.92rem;
+  }
+
+  .photo-badge-special {
+    font-size: 0.75rem;
+  }
+
+  /* Secondary recommendation badge */
+  .hero-secondary-photo-badge {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 100%;
+    padding: 8px 12px;
+    border-radius: var(--radius-md);
+    background-color: var(--color-card-bg);
+    border: 1.5px solid rgba(229, 138, 36, 0.4);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .secondary-thumbnail,
+  .badge-thumb-container {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+  }
+
+  .secondary-name,
+  .badge-title {
+    font-size: 0.88rem;
+  }
+
+  .secondary-tag,
+  .badge-sub {
+    font-size: 0.74rem;
   }
 }

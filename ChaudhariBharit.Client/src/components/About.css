@@ -349,13 +349,33 @@
 
 @media (max-width: 540px) {
   .about-highlights-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
     width: 100%;
   }
 
   .about-highlight-card {
     justify-content: flex-start;
     text-align: left;
+    padding: 10px 10px;
+    gap: 8px;
+    border-radius: var(--radius-md);
+  }
+
+  .highlight-icon-box {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--radius-xs);
+  }
+
+  .highlight-icon-box svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .highlight-text {
+    font-size: 0.8rem;
+    line-height: 1.25;
   }
 
   .about-heading {
@@ -368,5 +388,6 @@
 
   .about-image-card {
     max-width: 100%;
+    padding: 8px;
   }
 }

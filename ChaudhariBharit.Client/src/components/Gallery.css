@@ -171,7 +171,7 @@
   position: absolute;
   top: 12px;
   left: 12px;
-  background: linear-gradient(135deg, var(--color-secondary) 0%, #D47B1E 100%);
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
   color: #FFFFFF;
   padding: 4px 10px;
   border-radius: var(--radius-xs);
@@ -180,7 +180,7 @@
   gap: 6px;
   font-size: var(--fs-xs);
   font-weight: var(--fw-bold);
-  box-shadow: 0 2px 8px rgba(229, 138, 36, 0.4);
+  box-shadow: 0 2px 8px rgba(37, 77, 50, 0.4);
   z-index: 2;
 }
 
@@ -214,7 +214,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(229, 138, 36, 0.95) 0%, rgba(212, 123, 30, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(63, 117, 72, 0.95) 0%, rgba(37, 77, 50, 0.95) 100%);
   color: #FFFFFF;
   display: flex;
   align-items: center;
@@ -231,7 +231,7 @@
 
 .gallery-card.video-card:hover .gallery-play-icon {
   transform: scale(1.14);
-  box-shadow: 0 6px 24px rgba(229, 138, 36, 0.6), 0 0 0 6px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 24px rgba(63, 117, 72, 0.6), 0 0 0 6px rgba(255, 255, 255, 0.4);
 }
 
 /* Permanent Title Strip on bottom with Deep Leaf Green gradient */
@@ -417,7 +417,7 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: linear-gradient(135deg, var(--color-secondary) 0%, #D47B1E 100%);
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
   color: #FFFFFF;
   padding: 3px 8px;
   border-radius: var(--radius-xs);
