@@ -5,6 +5,7 @@ import About from './components/About';
 import Menu from './components/Menu';
 import WhyChooseUs from './components/WhyChooseUs';
 import Gallery from './components/Gallery';
+import Feedback from './components/Feedback';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AnnouncementModal from './components/AnnouncementModal';
@@ -33,6 +34,9 @@ function App() {
 
       {/* 6. Photo Gallery Section */}
       <Gallery />
+
+      {/* 6.5 Customer Feedback Section */}
+      <Feedback />
 
       {/* 7. Contact Us Section */}
       <Contact />

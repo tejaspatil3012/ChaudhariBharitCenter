@@ -19,6 +19,7 @@ export const Navbar = () => {
     { id: 'about', label: t('navbar.about') },
     { id: 'menu', label: t('navbar.menu') },
     { id: 'gallery', label: t('navbar.gallery') },
+    { id: 'feedback', label: t('navbar.feedback') },
     { id: 'contact', label: t('navbar.contact') },
   ];
 

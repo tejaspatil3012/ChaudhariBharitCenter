@@ -18,6 +18,7 @@ const Footer = () => {
     { id: 'about', label: t('footer.links.about') },
     { id: 'menu', label: t('footer.links.menu') },
     { id: 'gallery', label: t('footer.links.gallery') },
+    { id: 'feedback', label: t('footer.links.feedback') },
     { id: 'contact', label: t('footer.links.contact') }
   ];
 
