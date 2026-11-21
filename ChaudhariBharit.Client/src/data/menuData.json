@@ -236,7 +236,7 @@
         "en": "Kalnyachi Puri"
       },
       "price": 12,
-      "image": "/images/menu/kalnyachi-puri.jpg",
+      "image": "/images/menu/kalnyachi-puri.jpg?v=2",
       "badge": {
         "mr": "१ नग",
         "en": "1 Pc"
@@ -254,7 +254,7 @@
         "en": "Kalnyachi Bhakri"
       },
       "price": 25,
-      "image": "/images/menu/kalnyachi-bhakri.jpg",
+      "image": "/images/menu/kalnyachi-bhakri.jpg?v=2",
       "badge": {
         "mr": "१ नग",
         "en": "1 Pc"
@@ -272,7 +272,7 @@
         "en": "Poli (Chapati)"
       },
       "price": 15,
-      "image": "/images/menu/poli-chapati.jpg",
+      "image": "/images/menu/poli-chapati.jpg?v=2",
       "badge": {
         "mr": "१ नग",
         "en": "1 Pc"
@@ -290,7 +290,7 @@
         "en": "Sadhi Puri (Plain Puri)"
       },
       "price": 10,
-      "image": "/images/menu/sadhi-puri.jpg",
+      "image": "/images/menu/sadhi-puri.jpg?v=2",
       "badge": {
         "mr": "१ नग",
         "en": "1 Pc"
