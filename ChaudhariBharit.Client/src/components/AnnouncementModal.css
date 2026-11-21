@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Chaudhari Bharit Center - Announcement / Coming Soon Poster Modal
+   ========================================================================== */
+
+.announcement-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(15, 25, 18, 0.78);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: modalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.announcement-modal-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 480px;
+  width: 100%;
+  max-height: 90vh;
+  animation: modalScaleUp 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.announcement-modal-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--color-primary, #254D32);
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: all 0.2s ease;
+}
+
+.announcement-modal-close:hover {
+  background-color: var(--color-secondary, #E58A24);
+  transform: scale(1.1) rotate(90deg);
+}
+
+.announcement-modal-close:active {
+  transform: scale(0.95);
+}
+
+.announcement-poster-wrapper {
+  position: relative;
+  width: 100%;
+  max-height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-lg, 16px);
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.15);
+  background-color: #000000;
+}
+
+.announcement-poster-img {
+  width: 100%;
+  max-height: 88vh;
+  object-fit: contain;
+  display: block;
+  border-radius: inherit;
+}
+
+/* Animations */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 580px) {
+  .announcement-modal-backdrop {
+    padding: 12px;
+  }
+
+  .announcement-modal-container {
+    max-width: calc(100vw - 24px);
+    max-height: 86vh;
+  }
+
+  .announcement-modal-close {
+    top: 8px;
+    right: 8px;
+    width: 34px;
+    height: 34px;
+    background-color: rgba(25, 45, 30, 0.88);
+    backdrop-filter: blur(4px);
+  }
+
+  .announcement-poster-wrapper {
+    max-height: 84vh;
+  }
+
+  .announcement-poster-img {
+    max-height: 84vh;
+  }
+}

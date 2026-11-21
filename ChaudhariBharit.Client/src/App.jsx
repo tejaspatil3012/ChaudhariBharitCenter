@@ -7,11 +7,15 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import AnnouncementModal from './components/AnnouncementModal';
 import './styles/global.css';
 
 function App() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      {/* Starting Popup / Announcement Modal */}
+      <AnnouncementModal />
+
       {/* 1. Navbar Component */}
       <Navbar />
 
