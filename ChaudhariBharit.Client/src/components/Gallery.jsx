@@ -68,75 +68,12 @@ export const Gallery = () => {
       isProminent: false
     },
     {
-      id: 'p4',
-      type: 'photo',
-      image: '/images/gallery/gallery-bharit.jpg?v=2',
-      title: t('gallery.item1Title'),
-      description: t('gallery.item1Desc'),
-      isProminent: false,
-      hasVegTag: true
-    },
-    {
-      id: 'p5',
-      type: 'photo',
-      image: '/images/gallery/gallery-bharit-bhakri-thali.jpg',
-      title: t('gallery.item2Title'),
-      description: t('gallery.item2Desc'),
-      isProminent: false,
-      hasVegTag: true
-    },
-    {
-      id: 'p6',
-      type: 'photo',
-      image: '/images/gallery/gallery-bharit-puri-thali.jpg',
-      title: t('gallery.item3Title'),
-      description: t('gallery.item3Desc'),
-      isProminent: false,
-      hasVegTag: true
-    },
-    {
-      id: 'p7',
-      type: 'photo',
-      image: '/images/gallery/gallery-shev-bhaji.jpg',
-      title: t('gallery.item4Title'),
-      description: t('gallery.item4Desc'),
-      isProminent: false,
-      hasVegTag: true
-    },
-    {
       id: 'p8',
       type: 'photo',
       image: '/images/gallery/gallery-khandeshi-food-spread.jpg',
       title: t('gallery.item8Title'),
       description: t('gallery.item8Desc'),
       isProminent: true,
-      hasVegTag: true
-    },
-    {
-      id: 'p9',
-      type: 'photo',
-      image: '/images/menu/kokum-kadhi-bowl.jpg?v=2',
-      title: t('gallery.item5Title'),
-      description: t('gallery.item5Desc'),
-      isProminent: false,
-      hasVegTag: true
-    },
-    {
-      id: 'p10',
-      type: 'photo',
-      image: '/images/menu/buttermilk-kadhi-bowl.jpg?v=2',
-      title: t('gallery.item6Title'),
-      description: t('gallery.item6Desc'),
-      isProminent: false,
-      hasVegTag: true
-    },
-    {
-      id: 'p11',
-      type: 'photo',
-      image: '/images/gallery/gallery-kalnyachi-bhakri.jpg',
-      title: t('gallery.item7Title'),
-      description: t('gallery.item7Desc'),
-      isProminent: false,
       hasVegTag: true
     }
   ], [t]);

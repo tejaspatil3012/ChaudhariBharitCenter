@@ -157,33 +157,84 @@
    -------------------------------------------------------------------------- */
 .why-trust-strip {
   margin-top: var(--space-2xl);
-  padding: var(--space-md) var(--space-xl);
+  padding: 16px 8px;
   background-color: var(--color-card-bg);
-  border-radius: var(--radius-md);
-  border: 1.5px dashed var(--color-border);
-  display: flex;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: var(--space-md);
-  text-align: center;
-  box-shadow: var(--shadow-xs);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
 }
 
 .trust-strip-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 8px;
-  font-size: var(--fs-sm);
-  font-weight: var(--fw-bold);
-  color: var(--color-primary);
+  justify-content: center;
+  text-align: center;
+  padding: 6px 8px;
+  position: relative;
 }
 
-.trust-strip-item svg {
-  width: 18px;
-  height: 18px;
-  color: var(--color-accent);
+.trust-strip-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: var(--color-border);
+  opacity: 0.8;
+}
+
+.trust-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
   flex-shrink: 0;
+  transition: transform var(--transition-base);
+}
+
+.trust-strip-item:hover .trust-icon-circle {
+  transform: scale(1.08);
+}
+
+.trust-strip-item.item-veg .trust-icon-circle {
+  background-color: #E8F5E9;
+  color: #2E7D32;
+}
+
+.trust-strip-item.item-flame .trust-icon-circle {
+  background-color: #FFF3E0;
+  color: #E65100;
+}
+
+.trust-strip-item.item-parcel .trust-icon-circle {
+  background-color: #FEF9C3;
+  color: #B45309;
+}
+
+.trust-icon-circle svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.trust-item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.35;
+  text-align: center;
 }
 
 /* --------------------------------------------------------------------------
@@ -211,9 +262,28 @@
   }
 
   .why-trust-strip {
-    flex-direction: column;
-    gap: var(--space-xs);
-    align-items: flex-start;
-    padding: var(--space-md);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 14px 4px;
+    margin-top: var(--space-xl);
+  }
+
+  .trust-strip-item {
+    padding: 4px 2px;
+  }
+
+  .trust-icon-circle {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 6px;
+  }
+
+  .trust-icon-circle svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .trust-item-text {
+    font-size: 0.72rem;
+    line-height: 1.25;
   }
 }

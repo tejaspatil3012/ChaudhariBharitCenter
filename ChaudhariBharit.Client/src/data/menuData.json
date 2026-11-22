@@ -88,7 +88,7 @@
         "en": "Bharit"
       },
       "price": 65,
-      "image": "/images/menu/bharit-1kg.jpg?v=2",
+      "image": "/images/menu/bharit-1kg.jpg?v=3",
       "description": {
         "mr": "घरगुती चवीचे ताज्या चुलीवर भाजलेले अस्सल खान्देशी भरीत",
         "en": "Authentic woodfire-roasted Khandeshi bharit packed fresh"
@@ -164,7 +164,7 @@
         "en": "Shev Bhaji Plate"
       },
       "price": 90,
-      "image": "/images/menu/shev-bhaji.jpg",
+      "image": "/images/menu/shev-bhaji.jpg?v=2",
       "badge": {
         "mr": "स्पेशल प्लेट",
         "en": "Special Plate"
@@ -272,7 +272,7 @@
         "en": "Poli (Chapati)"
       },
       "price": 15,
-      "image": "/images/menu/poli-chapati.jpg?v=2",
+      "image": "/images/menu/poli-chapati.jpg?v=3",
       "badge": {
         "mr": "१ नग",
         "en": "1 Pc"
@@ -290,7 +290,7 @@
         "en": "Sadhi Puri (Plain Puri)"
       },
       "price": 10,
-      "image": "/images/menu/sadhi-puri.jpg?v=3",
+      "image": "/images/menu/sadhi-puri.jpg?v=4",
       "badge": {
         "mr": "१ नग",
         "en": "1 Pc"

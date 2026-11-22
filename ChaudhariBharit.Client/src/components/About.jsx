@@ -81,11 +81,6 @@ export const About = () => {
               </span>
             </div>
 
-            {/* Welcome & Narrative */}
-            <p className="about-welcome">
-              {t('about.welcome')}
-            </p>
-
             <p className="about-paragraph">
               {t('about.paragraph1')}
             </p>

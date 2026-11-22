@@ -114,25 +114,70 @@ export const WhyChooseUs = () => {
 
         {/* Bottom Assurance Strip */}
         <div className="why-trust-strip">
-          <div className="trust-strip-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span>{isMarathi ? '१००% शुद्ध शाकाहारी भोजन' : '100% Pure Vegetarian Meals'}</span>
+          <div className="trust-strip-item item-veg">
+            <div className="trust-icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                <path d="M2 21c0-3 1.85-5.36 5.08-6" />
+              </svg>
+            </div>
+            <span className="trust-item-text">
+              {isMarathi ? (
+                <>
+                  <span>१००% शुद्ध</span>
+                  <span>शाकाहारी</span>
+                </>
+              ) : (
+                <>
+                  <span>100% Pure</span>
+                  <span>Vegetarian</span>
+                </>
+              )}
+            </span>
           </div>
 
-          <div className="trust-strip-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span>{isMarathi ? 'चुलीवर भाजलेले अस्सल भरीत' : 'Authentic Woodfire Chulha Roasted'}</span>
+          <div className="trust-strip-item item-flame">
+            <div className="trust-icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2c1.5 3 4 5 4 8.5a5.5 5.5 0 1 1-11 0c0-3.5 2.5-5.5 4-8.5z" />
+                <path d="M12 17.5a2 2 0 0 0 2-2c0-1.5-1.5-2-2-3.5-0.5 1.5-2 2-2 3.5a2 2 0 0 0 2 2z" />
+              </svg>
+            </div>
+            <span className="trust-item-text">
+              {isMarathi ? (
+                <>
+                  <span>चुलीवर भाजलेले</span>
+                  <span>अस्सल भरीत</span>
+                </>
+              ) : (
+                <>
+                  <span>Woodfire</span>
+                  <span>Roasted Bharit</span>
+                </>
+              )}
+            </span>
           </div>
 
-          <div className="trust-strip-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span>{isMarathi ? 'सुरक्षित व जलद पार्सल सुविधा' : 'Hygienic & Fast Parcel Packing'}</span>
+          <div className="trust-strip-item item-parcel">
+            <div className="trust-icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="5" y="8" width="14" height="13" rx="2" />
+                <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+              </svg>
+            </div>
+            <span className="trust-item-text">
+              {isMarathi ? (
+                <>
+                  <span>सुरक्षित व जलद</span>
+                  <span>पार्सल सुविधा</span>
+                </>
+              ) : (
+                <>
+                  <span>Safe & Fast</span>
+                  <span>Parcel Service</span>
+                </>
+              )}
+            </span>
           </div>
         </div>
       </div>

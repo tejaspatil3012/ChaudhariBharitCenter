@@ -111,54 +111,98 @@ export const Hero = () => {
 
             {/* Traditional Trust Indicators */}
             <div className="hero-highlights-row">
-              <div className="highlight-item">
-                <svg
-                  className="highlight-icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M12 2c.5 1.5-1 2-1 3 0 .8.7 1.5 1 1.5s1-.7 1-1.5c0-1-1.5-1.5-1-3z" fill="currentColor" stroke="none" />
-                  <path d="M8.5 8.5C7 10.5 7 13 8 15c1.5 3 4 5 4 5s2.5-2 4-5c1-2 1-4.5-.5-6.5" />
-                </svg>
-                <span>{isMarathi ? 'चुलीवर भाजलेले अस्सल भरीत' : 'Woodfire Chulha Roasted'}</span>
+              <div className="highlight-item item-chulha">
+                <div className="highlight-icon-circle" aria-hidden="true">
+                  <svg
+                    className="highlight-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 2c1.5 3 4 5 4 8.5a5.5 5.5 0 1 1-11 0c0-3.5 2.5-5.5 4-8.5z" />
+                    <path d="M12 17.5a2 2 0 0 0 2-2c0-1.5-1.5-2-2-3.5-0.5 1.5-2 2-2 3.5a2 2 0 0 0 2 2z" />
+                  </svg>
+                </div>
+                <span className="highlight-text">
+                  {isMarathi ? (
+                    <>
+                      <span>चुलीवर भाजलेले</span>
+                      <span>अस्सल भरीत</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>Woodfire Chulha</span>
+                      <span>Roasted</span>
+                    </>
+                  )}
+                </span>
               </div>
 
-              <div className="highlight-item">
-                <svg
-                  className="highlight-icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="m9 12 2 2 4-4" />
-                </svg>
-                <span>{isMarathi ? 'गरमागरम व खमंग पुरी' : 'Hot & Fresh Puris'}</span>
+              <div className="highlight-item item-puri">
+                <div className="highlight-icon-circle" aria-hidden="true">
+                  <svg
+                    className="highlight-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <ellipse cx="12" cy="14" rx="8" ry="5" />
+                    <path d="M8 7c.5-1.5 2-2 2-3" />
+                    <path d="M12 7c.5-1.5 2-2 2-3" />
+                  </svg>
+                </div>
+                <span className="highlight-text">
+                  {isMarathi ? (
+                    <>
+                      <span>गरमागरम व</span>
+                      <span>खमंग पुरी</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>Hot & Fresh</span>
+                      <span>Crispy Puris</span>
+                    </>
+                  )}
+                </span>
               </div>
 
-              <div className="highlight-item">
-                <svg
-                  className="highlight-icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-                <span>{isMarathi ? '१००% घरगुती शुद्धता' : 'Pure Homemade Quality'}</span>
+              <div className="highlight-item item-purity">
+                <div className="highlight-icon-circle" aria-hidden="true">
+                  <svg
+                    className="highlight-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <path d="m9 12 2 2 4-4" />
+                  </svg>
+                </div>
+                <span className="highlight-text">
+                  {isMarathi ? (
+                    <>
+                      <span>१००% घरगुती</span>
+                      <span>शुद्धता</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>100% Pure</span>
+                      <span>Homemade Quality</span>
+                    </>
+                  )}
+                </span>
               </div>
             </div>
           </div>
