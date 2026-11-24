@@ -54,7 +54,7 @@ export const LanguageProvider = ({ children }) => {
           );
         }
       } else {
-        document.title = 'चौधरी भरीत सेंटर | अस्सल घरगुती चव';
+        document.title = 'Chaudhari Bharit Center | अस्सल घरगुती चव';
         if (metaDesc) {
           metaDesc.setAttribute(
             'content',
