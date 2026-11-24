@@ -116,7 +116,7 @@ export const About = () => {
               <div className="about-image-wrapper">
                 {!imgError ? (
                   <img
-                    src="/images/bharit-puri.jpg"
+                    src="/images/menu/bharit-puri-thali.jpg?v=2"
                     alt={t('about.imageAlt')}
                     className="about-food-img"
                     onError={() => setImgError(true)}

@@ -16,7 +16,7 @@ export const Gallery = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const videoRef = useRef(null);
 
-  const INITIAL_VISIBLE_COUNT = 5;
+  const INITIAL_VISIBLE_COUNT = 6;
 
   // Gallery items including official restaurant photographs & authentic Khandeshi delicacies + videos
   const galleryItems = useMemo(() => [
@@ -68,13 +68,14 @@ export const Gallery = () => {
       isProminent: false
     },
     {
-      id: 'p8',
-      type: 'photo',
-      image: '/images/gallery/gallery-khandeshi-food-spread.jpg',
-      title: t('gallery.item8Title'),
-      description: t('gallery.item8Desc'),
-      isProminent: true,
-      hasVegTag: true
+      id: 'v3',
+      type: 'video',
+      videoSrc: '/videos/video-woodfire-brinjal-roasting.mp4',
+      poster: '/images/gallery/poster-woodfire-brinjal-roasting.jpg',
+      title: t('gallery.video3Title'),
+      description: t('gallery.video3Desc'),
+      duration: '0:51',
+      isProminent: false
     }
   ], [t]);
 
