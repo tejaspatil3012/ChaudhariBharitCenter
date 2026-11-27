@@ -45,22 +45,32 @@ export const LanguageProvider = ({ children }) => {
     if (typeof document !== 'undefined') {
       document.documentElement.lang = language;
       const metaDesc = document.querySelector('meta[name="description"]');
+      const metaTitle = document.querySelector('meta[name="title"]');
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+      const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+
       if (language === 'en') {
-        document.title = 'Chaudhari Bharit Center | Authentic Homemade Taste';
-        if (metaDesc) {
-          metaDesc.setAttribute(
-            'content',
-            'Visit Chaudhari Bharit Center in Kingaon for authentic Khandeshi Bharit, Bhakri, Puri and traditional homemade food. Takeaway available.'
-          );
-        }
+        const enTitle = 'Chaudhari Bharit Center | Authentic Homemade Taste';
+        const enDesc = 'Visit Chaudhari Bharit Center in Kingaon for authentic Khandeshi Bharit, Bhakri, Puri and traditional homemade food. Takeaway available.';
+        document.title = enTitle;
+        if (metaTitle) metaTitle.setAttribute('content', enTitle);
+        if (ogTitle) ogTitle.setAttribute('content', enTitle);
+        if (twitterTitle) twitterTitle.setAttribute('content', enTitle);
+        if (metaDesc) metaDesc.setAttribute('content', enDesc);
+        if (ogDesc) ogDesc.setAttribute('content', enDesc);
+        if (twitterDesc) twitterDesc.setAttribute('content', enDesc);
       } else {
-        document.title = 'Chaudhari Bharit Center | अस्सल घरगुती चव';
-        if (metaDesc) {
-          metaDesc.setAttribute(
-            'content',
-            'चौधरी भरीत सेंटर, किनगाव येथे अस्सल खान्देशी भरीत, भाकरी, पुरी आणि पारंपरिक पदार्थांचा आनंद घ्या. पार्सल सुविधा उपलब्ध.'
-          );
-        }
+        const mrTitle = 'Chaudhari Bharit Center | अस्सल घरगुती चव';
+        const mrDesc = 'चौधरी भरीत सेंटर, किनगाव येथे अस्सल खान्देशी भरीत, भाकरी, पुरी आणि पारंपरिक पदार्थांचा आनंद घ्या. पार्सल सुविधा उपलब्ध.';
+        document.title = mrTitle;
+        if (metaTitle) metaTitle.setAttribute('content', mrTitle);
+        if (ogTitle) ogTitle.setAttribute('content', mrTitle);
+        if (twitterTitle) twitterTitle.setAttribute('content', mrTitle);
+        if (metaDesc) metaDesc.setAttribute('content', mrDesc);
+        if (ogDesc) ogDesc.setAttribute('content', mrDesc);
+        if (twitterDesc) twitterDesc.setAttribute('content', mrDesc);
       }
     }
   }, [language]);
